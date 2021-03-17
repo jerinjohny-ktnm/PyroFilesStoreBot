@@ -101,10 +101,7 @@ async def start(bot, cmd):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
-					],
+					
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
@@ -146,7 +143,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+					text="Something went Wrong. Contact my [Dev](https://t.me/imjerin).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -171,7 +168,7 @@ async def main(bot, message):
 				f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
-					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"), InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]
+					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Dev", url="https://t.me/imjerin")]]
 				),
 				disable_web_page_preview=True
 			)
@@ -287,9 +284,7 @@ async def button(bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[
-						InlineKeyboardButton("Source Codes of Bot", url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
-					],
+					
 					[
 						InlineKeyboardButton("Go Home", callback_data="gotohome"),
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
@@ -304,9 +299,7 @@ async def button(bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[
-						InlineKeyboardButton("Source Codes of Bot", url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
-					],
+					
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 						InlineKeyboardButton("Go Home", callback_data="gotohome")
@@ -321,10 +314,7 @@ async def button(bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
-					],
+					
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
@@ -373,10 +363,7 @@ async def button(bot, cmd: CallbackQuery):
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(
 				[
-					[
-						InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
-					],
+					
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
 						InlineKeyboardButton("About Dev", callback_data="aboutdevs")
